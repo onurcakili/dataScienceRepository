@@ -1,11 +1,9 @@
-# dataScienceRepository
-Data Science / Data Analyst uzmanlığında geliştirdiğim ve geliştirmekte olduğum projeler, kaynaklar ve platformlara buradan ulaşabilirsiniz.    
+# Data Science Portfolio
 
-## İçindekiler
 
-Bu repo'da 
+## Table of Contents
 
- ### Data Science Projects
+ ### 1. Data Science Projects
 
  * [Persona Project](https://github.com/onurcakili/dataScienceRepository/blob/main/01_Data_Science_Projects/01_Persona_Example.ipynb)
  * [Gezinomi Project](https://github.com/onurcakili/dataScienceRepository/blob/main/01_Data_Science_Projects/02_Gezinomi_Project.ipynb)
@@ -21,8 +19,7 @@ Bu repo'da
 
 
 
-
- ### Data Science
+ ### 2. Data Science
  * [Python](https://github.com/onurcakili/dataScienceRepository/tree/main/02_Python_Repository/01_Python)
  * [Data Manipulation](https://github.com/onurcakili/dataScienceRepository/tree/main/02_Python_Repository/02_Data_Manipulation)
  * [Data Visualization](https://github.com/onurcakili/dataScienceRepository/tree/main/02_Python_Repository/03_Data_Visualization)
@@ -31,20 +28,11 @@ Bu repo'da
  * [Data Preprocessing](https://github.com/onurcakili/dataScienceRepository/tree/main/02_Python_Repository/06_Data_Preprocessing)
  * [Machine Learning](https://github.com/onurcakili/dataScienceRepository/tree/main/02_Python_Repository/07_Machine_Learning/07_2_machineLearning201)
 
-### SQL
+### 3. SQL
 * MSSQL Queries,
 * MSSQL Database,
 * MSSQL DBMS
 
-### Data Sources
+### 4. Data Sources
 * [Data Source](https://github.com/onurcakili/dataScienceRepository/tree/main/00_Data_Source)
 
-
-## Nasıl Kullanılır?
-Bu repository, beni tanımak isteyenler ve veri bilimi projeleri üzerinde çalışmak isteyenler için kaynak olarak hazırlanmıştır.
-Her klasörün içinde README dosyaları veya açıklamalar bulunarak, projelerin nasıl çalıştırılacağı ve analizlerin nasıl yapıldığı anlatılmaktadır
-
-### Bu repository her gün güncellenmektedir. Eksik veya Hatalı bölümler düzeltiliyor/düzeltilecektir.
-
-Sevgilerle,
-Onur
