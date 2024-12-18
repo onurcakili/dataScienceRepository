@@ -6,10 +6,10 @@ Data Science / Data Analyst uzmanlığında geliştirdiğim ve geliştirmekte ol
 Bu repo'da 
 
  ### Data Science
- * [Python](https://github.com/onurcakili/dataScienceRepository/tree/main/02_Python_Repository/01_Python),
- * [Data Manipulation] (https://github.com/onurcakili/dataScienceRepository/tree/main/02_Python_Repository/02_Data_Manipulation),
- * Data Visualization,
- * Exploratory Data Analysis (EDA),
+ * [Python](https://github.com/onurcakili/dataScienceRepository/tree/main/02_Python_Repository/01_Python)
+ * [Data Manipulation](https://github.com/onurcakili/dataScienceRepository/tree/main/02_Python_Repository/02_Data_Manipulation)
+ * [Data Visualization](https://github.com/onurcakili/dataScienceRepository/tree/main/02_Python_Repository/03_Data_Visualization)
+ * [Exploratory Data Analysis (EDA)](https://github.com/onurcakili/dataScienceRepository/tree/main/02_Python_Repository/04_Exploratory_Data_Analysis_EDA)
  * Statistics for Data Science,
  * Data Preprocessing,
  * Machine Learning
