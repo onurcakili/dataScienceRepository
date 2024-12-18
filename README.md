@@ -6,7 +6,7 @@ Data Science / Data Analyst uzmanlığında geliştirdiğim ve geliştirmekte ol
 Bu repo'da 
 
  ### Data Science
- * Python,
+ * [Python](https://github.com/onurcakili/dataScienceRepository/tree/main/02_Python_Repository/01_Python),
  * Data Manipulation,
  * Data Visualization,
  * Exploratory Data Analysis (EDA),
