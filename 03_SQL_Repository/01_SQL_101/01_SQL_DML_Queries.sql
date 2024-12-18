@@ -89,6 +89,44 @@ SET AGE = DATEDIFF(YEAR, BIRTHDAY, GETDATE())
 UPDATE EMPLOYEES
 SET AGE = NULL
 
+----
+----
+-- a. Sipariş Teslim Süresi Hesaplama
+
+SELECT 
+    OrderID, 
+    DATEDIFF(day, OrderDate, DeliveryDate) AS DeliveryDays
+FROM Orders;
+
+
+---
+
+-- b. Müşteri Yaşını Hesaplama
+
+SELECT 
+    CustomerName, 
+    DATEDIFF(year, BirthDate, GETDATE()) AS Age
+FROM Customers;
+
+
+----
+
+-- c. Ürün Son Kullanma Tarihi Kontrolü
+
+SELECT 
+    ProductName, 
+    DATEDIFF(day, GETDATE(), ExpiryDate) AS DaysUntilExpiry
+FROM Products
+WHERE DATEDIFF(day, GETDATE(), ExpiryDate) <= 30; -- 30 günden az kalanlar
+
+
+-----
+
+
+
+
+
+
 
 
 
