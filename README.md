@@ -6,7 +6,7 @@ Data Science / Data Analyst uzmanlığında geliştirdiğim ve geliştirmekte ol
 Bu repo'da 
 
  ### Data Science
- * [Python],
+ * Python,
  * Data Manipulation,
  * Data Visualization,
  * Exploratory Data Analysis (EDA),
