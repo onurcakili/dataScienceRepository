@@ -7,7 +7,7 @@ Bu repo'da
 
  ### Data Science
  * [Python](https://github.com/onurcakili/dataScienceRepository/tree/main/02_Python_Repository/01_Python),
- * Data Manipulation,
+ * [Data Manipulation] (https://github.com/onurcakili/dataScienceRepository/tree/main/02_Python_Repository/02_Data_Manipulation),
  * Data Visualization,
  * Exploratory Data Analysis (EDA),
  * Statistics for Data Science,
