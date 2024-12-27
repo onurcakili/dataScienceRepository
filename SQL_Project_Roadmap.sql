@@ -513,10 +513,95 @@ GROUP BY
         ELSE '46+' 
     END
 
+ ----------------------------------------------------------------------------------------------------------------------------       
+-- 5. Makine Öğrenmesi için Veri Hazırlığı
+
+/*
+
+Veri hazırlığı, makine öğrenmesi projelerinin en kritik adımlarındandır.
+İyi bir veri hazırlığı süreci modelin başarısını doğrudan etkiler. 
+Veri Temizliği, future engineering, dönüştürme ve verilerin uygun formata getirilmesi çok önemlidir.
+
+ */
         
-        
-        
-    
+
+-- 5.1 Veri Temizleme (Data Cleaning)
+
+-- SQL ile Eksik Verilerin Tespiti
+SELECT * From Customers
+WHERE Email IS NULL
+
+
+-- SQL ile Eksik Verileri Silmek
+DELETE FROM Customers
+Where Email IS NULL
+
+-- 5.2 Eksik Verilerle İşlemler 
+-- SQL ile Eksik Verileri Doldurmak
+Update Customers
+Set income = (SELECT AVG(income) from Customers)
+Where income IS NULL
+
+-- 5.3 Aykırı Değerlerle İşlemler 
+-- SQL ile Aykırı Değer Tespiti
+Select * From Customers
+WHERE income > 200000.00
+
+-- SQL ile Çift Kayıtların (duplicate records) silinmesi
+SELECT firstname, lastname, COUNT(*)	-- çift kayıtlar DELETE yapılarak silinebilir.
+FROM Customers
+GROUP BY firstname, lastname
+HAVING COUNT(*) > 1  
+
+-- 5.4 Veri Dönüşümleri 
+-- Kategorik verilerin sayısal veriye dönüştürülmesi
+SELECT
+
+	CASE
+    	WHEN Gender = 'Male' THEN 0
+        WHEN Gender = 'Female' THEN 1
+        ELSE 'Belirtilmedi'
+	END as Gender,
+    firstname, lastname
+FROM Customers
+
+-- SQL ile min-max normalizasyon işlemi
+-- (MAAŞ - MİN(MAAS)) / (MAX(MAAS) - Min(MAAS))  >>>> Maaş değr. [0,1] aralığına çekecek
+
+SELECT
+	(income - (SELECT min(income) from Customers)) 
+    /
+    ((SELECT max(income) from Customers) - (SELECT min(income) from Customers)) 
+    as NormalizedIncome
+FROM Customers
+
+
+-- Müşterinin son satın alma tarihinden itibaren geçen süre
+SELECT
+    firstname,
+    lastname,
+    datediff(day, MAX(saledate), GETDATE()) as DaysSinceLastPurchase
+FROM Sales s
+INNER JOIN Customers c on c.CustomerID = s.CustomerID 
+GROUP BY firstname, lastname
+
+----------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
  
 
 
