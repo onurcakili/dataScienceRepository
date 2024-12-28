@@ -1,7 +1,7 @@
 ----------------------------------------------------------------------------------------------------------------------------
--- Data Science için SQL Proje Yonetim Sureci (ROADMAP)
--- [MSSQL ile Uygulamalı Olarak Hazırlanmıştır]
--- Bu repo, uzmanlığımı pekiştirmek ve topluluğa kaynak oluşturmak amacıyla veri bilimi projelerinin SQL yönetim sürecini adım adım ele alır.
+-- Data Science için SQL Proje Yönetim Süreci (RoadMap)
+-- [MSSQL ile Uygulamalı Olarak Hazırlanmıştır.]
+-- Bu repo uzmanlığımı pekiştirmek ve topluluğa kaynak oluşturmak amacıyla veri bilimi projelerinin SQL yönetim sürecini adım adım ele alır.
 -- MSSQL kullanılarak bir proje içerisindeki tüm adımlar, yöntemler, temel rehberler ve örnek uygulamalar sunulmaktadır.
 
 /* 
@@ -9,29 +9,28 @@
 Bu süreç:
  
 	1. Proje Tanımı ve Planlama
-
 Bir projenin gerçek hayat senaryosu nedir?
 Hangi iş problemini çözmek için bu projeyi yapıyoruz?
 Verilerin genel tanımı ve hedefleri nelerdir?
 Kullanılacak araçlar ve SQL'in proje içindeki rolü nedir?
 
 	2. Veri Kaynakları ve Veri Toplama
-Veri tabanı yapısını (tablolar, ilişkiler, veri türleri) ve örnek veri modellerini açıkla.
+Veri tabanı yapısını (tablolar, ilişkiler, veri türleri) ve örnek veri modellerini açıklar.
 SQL ile veri tabanı bağlantısı nasıl kurulur?
-Veri toplamak için gerçek hayatta kullanılan yöntemleri açıkla.
+Veri toplamak için gerçek hayatta kullanılan yöntemleri açıklar.
 
 	3. Veri Manipülasyonu ve Dönüşümü
-SQL ile verileri filtreleme, gruplama, birleştirme, dönüştürme ve temizleme işlemlerini detaylıca göster.
-Örnek veri senaryoları üzerinde uygulamalı örnekler sun (örn. bir satış raporu oluşturma, eksik veri doldurma).
+SQL ile verileri filtreleme, gruplama, birleştirme, dönüştürme ve temizleme işlemlerini detaylıca gösterir.
+Örnek veri senaryoları üzerinde uygulamalı örnekler sunar. (örn. bir satış raporu oluşturma, eksik veri doldurma).
 
 	4. Veri Analizi ve Görselleştirme
 MSSQL ile KPI hesaplamaları nasıl yapılır?
-SQL'den Power BI veya başka bir görselleştirme aracına veri aktarma sürecini açıkla.
-Veri analizi için SQL sorgularıyla örnek işler yap.
+SQL'den Power BI veya başka bir görselleştirme aracına veri aktarma sürecini açıklar.
+Veri analizi için SQL sorgularıyla örnek uygulama.
 
 	5. Makine Öğrenimi için Veri Hazırlığı
 SQL ile veri seçimi ve veri seti oluşturma süreçlerini göster.
-Modelleme için SQL'de veri normalizasyonu, öznitelik mühendisliği gibi konuları açıkla.
+Modelleme için SQL'de veri normalizasyonu, öznitelik mühendisliği gibi konuları açıklar.
 
 	6. Raporlama ve Sonuçların Sunumu
 SQL'de prosedürler ve raporlama araçlarıyla sonuçların sunulması.
@@ -41,12 +40,6 @@ Gerçek iş hayatında kullanabileceğim SQL tabanlı bir rapor örneği oluştu
 SQL sorgularında performans optimizasyonu (ör. indeksleme, sorgu optimizasyonu).
 Veri güvenliği ve erişim kontrolleri.
 
-
-	8.Dikkat Edilmesi Gerekenler
-Her adımda kullanılan SQL sorgularını ve mantığını ayrıntılı açıkla.
-Kavramların tanımları, gerçek hayat problemleriyle ilişkilendirilmiş olsun.
-Kodları yorum satırlarıyla açıkla ve hatalar ile çözüm yollarını ekle.
-Gerekirse her adımda kısa özetler veya kontrol listeleri sun.
 
 */
 
@@ -70,7 +63,7 @@ yapmak istiyor. Bunun için geçmiş verileri (satış, ürünler, müşteriler)
 Hedefler:
  * En çok satılan ürünleri belirlemek,
  * Müşteri segmentasyonları oluşturmak (örn. yaş, gelir gibi parametrelere göre)
- * Satışları etkileyen diğer faktörler
+ * Satışları etkileyen diğer faktörler belirlenmek isteniyor.
  
 ** Kullanılacak Araçlar ve SQL'in Projedeki Rolü ** 
 Veri analizi için SQL kullanarak veri manipülasyonu, analiz ve raporlama işlemleri yapılacak.
@@ -83,8 +76,8 @@ Veri Görselleştirme için ise Power BI veya Excel gibi araçlar devreye girebi
 
 2. Veri Kaynakları ve Veri Toplama
 
-Veri Tabanı Yapısı : Veri tabanındaki tabloları, ilişkileri, veri türlerini tanımlamak
-veri toplama sürecine başlamak için gereklidir. Bu, verilerin düzenli ve anlamlı hale gelmesini sağlar.
+Veri Tabanı Yapısı : Veri tabanındaki tabloları, ilişkileri, veri türlerini tanımlamak veri toplama sürecine başlamak için gereklidir.
+Bu, verilerin düzenli ve anlamlı hale gelmesini sağlar.
 
 Örnek Veri Tabanı Yapısı : 
 
@@ -102,7 +95,7 @@ Biz ROADMAP için kendimiz bir ECommerce DB create edeceğiz ve sorguları burad
 -- Yeni bir veritabanı oluşturuyoruz
 -- CREATE DATABASE ECommerceDB
 
--- 2.1 Customers tablosu
+-- 2.1 Customers tablosu Oluşturmak
 CREATE TABLE Customers 
 (
     CustomerID INT PRIMARY KEY IDENTITY(1,1),    -- Müşteri ID, otomatik artan
@@ -116,7 +109,7 @@ CREATE TABLE Customers
     Address VARCHAR(200)                         -- Müşterinin adresi
 )
 
--- 2.1.1 Products Tablosu
+-- 2.1.1 Products Tablosu Oluşturmak
 CREATE TABLE Products 
 (
     ProductID INT PRIMARY KEY IDENTITY(1,1),      -- Ürün ID, otomatik artan
@@ -127,7 +120,8 @@ CREATE TABLE Products
     Description TEXT    --varchar(max)            -- Ürünün açıklaması
 )
 
--- 2.1.2 Sale Tablosu
+-- 2.1.2 Sales Tablosu Oluşturmak
+-- Sales tablosu Products ve Customers tablosuyla ilişkilendirilecektir. 
 CREATE TABLE Sales 
 (
     SaleID INT PRIMARY KEY IDENTITY(1,1),         -- Satış ID, otomatik artan
@@ -136,12 +130,12 @@ CREATE TABLE Sales
     Quantity INT,                                 -- Satılan ürün adedi
     SaleAmount DECIMAL(10, 2),                    -- Satış tutarı
     SaleDate DATETIME,                            -- Satış tarihi ve saati ile birlikte
-    FOREIGN KEY (CustomerID) REFERENCES Customers(CustomerID),  -- Müşteri tablosuna ilişki
-    FOREIGN KEY (ProductID) REFERENCES Products(ProductID)       -- Ürün tablosuna ilişki
+    FOREIGN KEY (CustomerID) REFERENCES Customers(CustomerID),  -- Customers tablosuna ilişki
+    FOREIGN KEY (ProductID) REFERENCES Products(ProductID)       -- Products tablosuna ilişki
 )
 
 CREATE TABLE Orders (
-    OrderID INT IDENTITY(1,1) PRIMARY KEY,    -- Benzersiz sipariş kimliği
+    OrderID INT IDENTITY(1,1) PRIMARY KEY,    -- Unique OrderID
     CustomerID INT NOT NULL,                   -- Müşteri kimliği
     OrderDate DATETIME NOT NULL,               -- Siparişin verildiği tarih
     TotalAmount DECIMAL(10, 2) NOT NULL,       -- Toplam tutar
@@ -163,7 +157,8 @@ VALUES
 ('Ahmet', 'Yılmaz', 30, 'Erkek', 50000.00, 'ahmet@example.com', '5551234567', 'İstanbul, Türkiye'),
 ('Ayşe', 'Kaya', 28, 'Kadın', 45000.00, 'ayse@example.com', '5552345678', 'Ankara, Türkiye'),
 ('Mustafa', 'Çelik', 50, 'Erkek', 75000.00, 'mustafa@example.com', '5557845678', 'Hatay, Türkiye'),
-('Mehmet', 'Demir', 35, 'Erkek', 60000.00, 'mehmet@example.com', '5553456789', 'İzmir, Türkiye');
+('Mehmet', 'Demir', 35, 'Erkek', 60000.00, 'mehmet@example.com', '5553456789', 'İzmir, Türkiye')
+
 
 
 -- 2.2.1 Products tablosuna veri ekleme işlemi
@@ -171,7 +166,7 @@ INSERT INTO Products (ProductName, Price, Category, StockQuantity, Description)
 VALUES 
 ('Smartphone', 1500.00, 'Elektronik', 50, 'Yüksek çözünürlüklü ekran, 64GB depolama alanı'),
 ('T-shirt', 100.00, 'Giyim', 200, 'Pamuklu, rahat kullanım'),
-('Laptop', 3500.00, 'Elektronik', 30, 'Intel i7 işlemci, 16GB RAM, 512GB SSD');
+('Laptop', 3500.00, 'Elektronik', 30, 'Intel i7 işlemci, 16GB RAM, 512GB SSD')
 
 
 
@@ -180,7 +175,7 @@ INSERT INTO Sales (CustomerID, ProductID, Quantity, SaleAmount, SaleDate)
 VALUES 
 (1, 1, 1, 1500.00, '2024-12-25 10:30:00'),
 (2, 2, 2, 200.00, '2024-12-26 14:15:00'),
-(3, 3, 1, 3500.00, '2024-12-27 16:00:00');
+(3, 3, 1, 3500.00, '2024-12-27 16:00:00')
 
 
 
@@ -189,7 +184,7 @@ INSERT INTO Orders (CustomerID, OrderDate, TotalAmount, ShippingAddress, OrderSt
 VALUES
 (1, '2024-12-26 10:00:00', 5000.00, 'İstanbul, Türkiye', 'Beklemede', 'Kredi Kartı', '2024-12-26 09:00:00', 1, 1),
 (2, '2024-12-25 14:30:00', 1500.00, 'Ankara, Türkiye', 'Tamamlandı', 'Havale', '2024-12-26 09:00:00', 2, 1), 
-(1, '2024-12-26 12:00:00', 100.00, 'İstanbul, Türkiye', 'Tamamlandı', 'Kredi Kartı', '2024-12-27 10:00:00', 3, 2);
+(1, '2024-12-26 12:00:00', 100.00, 'İstanbul, Türkiye', 'Tamamlandı', 'Kredi Kartı', '2024-12-27 10:00:00', 3, 2)
 
 -- 2.3 Customers Tablosundaki Verileri Görüntüleme
 SELECT * FROM Customers;
@@ -370,9 +365,9 @@ GROUP BY productid	-- aggregate fonks.(SUM(saleamount)) kullanıldığı için G
 SELECT S.productid, P.productname, SUM(S.saleamount) AS Total_Amount
 FROM Sales S
 JOIN Products P ON S.productid = P.productid
-GROUP BY S.ProductID, P.productname;
+GROUP BY S.ProductID, P.productname
 
-
+-- Ürün bazında 1000 TL ve üzerinde olan ürünlerin satış miktarını hesaplamak
 SELECT productid, SUM(saleamount) AS Total_Sales
 FROM Sales
 GROUP BY productid
@@ -384,7 +379,7 @@ FROM Sales
 GROUP BY productid;
 
 -- Her Bir Tarih İçin Satış Sayısını Hesaplamak
-SELECT saledate, COUNT(*) AS Sale_Quantity
+SELECT saledate, COUNT(quantity) AS Sale_Quantity
 FROM Sales
 GROUP BY saledate
 
@@ -427,24 +422,21 @@ SELECT
     p.ProductName,
     SUM(s.Quantity) AS TotalQuantitySold,
     SUM(s.SaleAmount) AS TotalSales
-FROM 
-    Products p
-LEFT JOIN 
-    Sales s ON p.ProductID = s.ProductID
-GROUP BY 
-    p.ProductID, p.ProductName;
+FROM  Products p
+LEFT JOIN Sales s ON p.ProductID = s.ProductID
+GROUP BY p.ProductID, p.ProductName
+ORDER By SUM(s.SaleAmount) DESC
     
-
+   
+ 
 -- Siparişlerin teslim süresi
 -- Her siparişin teslim süresini (gün cinsinden) hesaplayarak türetilmiş bir sütun oluşturacağız.
 SELECT 
-    OrderID,
-    CustomerID,
-    OrderDate,
-    ShippingDate,
-    DATEDIFF(DAY, OrderDate, ShippingDate) AS DeliveryDays
-FROM 
-    Orders;
+    OrderID as UrunID,
+    OrderDate AS SiparisTarihi,
+    ShippingDate AS GonderimTarihi,
+    DATEDIFF(DAY, OrderDate, ShippingDate) AS TeslimatSuresi
+FROM Orders
 
 
 -- En çok harcama yapan müşteri
@@ -452,14 +444,10 @@ SELECT
     c.CustomerID,
     CONCAT(c.FirstName, ' ', c.LastName) AS FullName,
     SUM(s.SaleAmount) AS TotalSpent
-FROM 
-    Customers c
-JOIN 
-    Sales s ON c.CustomerID = s.CustomerID
-GROUP BY 
-    c.CustomerID, c.FirstName, c.LastName
-ORDER BY 
-    TotalSpent DESC;
+FROM Customers c
+JOIN Sales s ON c.CustomerID = s.CustomerID
+GROUP BY c.CustomerID, c.FirstName, c.LastName
+ORDER BY TotalSpent DESC;
 
 
 ----------------------------------------------------------------------------------------------------------------------------
@@ -488,11 +476,12 @@ GROUP BY p.Category
 
 -- Satış tarihlerine göre satış miktarlarını hesaplamak
 Select
-	CONVERT(VARCHAR, SaleDate, 23) as SaleDate,
+	CONVERT(VARCHAR, SaleDate, 23) as SaleDate,  -- DATETIME YYYY-MM-DD formatına dönüştürüldü
     SUM(SaleAmount) as TotalSales
 FROM Sales
-GROUP BY CONVERT(VARCHAR, SaleDate, 23)
+GROUP BY CONVERT(VARCHAR, SaleDate, 23) -- Aggregation kullanıldığı için group by
 ORDER BY SaleDate
+
 
 -- Müşteri Yaş Gruplarına Göre Satış Dağılımı
 SELECT 
@@ -544,8 +533,36 @@ Where income IS NULL
 
 -- 5.3 Aykırı Değerlerle İşlemler 
 -- SQL ile Aykırı Değer Tespiti
-Select * From Customers
-WHERE income > 200000.00
+
+-- Ortak Sorgular için Geçici Tablo (CTE (Common Table Expression))
+WITH Quartiles AS (
+    SELECT 
+        PERCENTILE_CONT(0.25) WITHIN GROUP (ORDER BY SaleAmount) OVER () AS Q1,
+        PERCENTILE_CONT(0.75) WITHIN GROUP (ORDER BY SaleAmount) OVER () AS Q3
+    FROM Sales
+),
+Bounds AS (
+    SELECT 
+        MAX(Q1) AS Q1, 
+        MAX(Q3) AS Q3, 
+        MAX(Q3) - MAX(Q1) AS IQR,
+        GREATEST(MAX(Q1) - 1.5 * (MAX(Q3) - MAX(Q1)), 0) AS LowerBound,   -- Alt sınır (0'dan küçük olamaz)
+        MAX(Q3) + 1.5 * (MAX(Q3) - MAX(Q1)) AS UpperBound                 -- Üst sınır
+    FROM Quartiles
+)
+SELECT 
+    S.SaleAmount,
+    B.LowerBound,
+    B.UpperBound,
+    CASE
+        WHEN S.SaleAmount < B.LowerBound THEN 'Alt Aykırı'
+        WHEN S.SaleAmount > B.UpperBound THEN 'Üst Aykırı'
+        ELSE 'Normal'
+    END AS Durum
+FROM Sales S
+CROSS JOIN Bounds B;
+
+
 
 -- SQL ile Çift Kayıtların (duplicate records) silinmesi
 SELECT firstname, lastname, COUNT(*)	-- çift kayıtlar DELETE yapılarak silinebilir.
