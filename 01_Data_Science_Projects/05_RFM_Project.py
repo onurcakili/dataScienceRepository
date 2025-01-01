@@ -45,7 +45,7 @@ pd.set_option('display.max_columns', None)
 # pd.set_option('display.max_rows', None)
 pd.set_option('display.float_format', lambda x: '%.3f' % x)
 
-df_ = pd.read_excel("/Users/mvahit/Desktop/DSMLBC4/datasets/online_retail_II.xlsx", sheet_name="Year 2009-2010")
+df_ = pd.read_excel("C:/Users/onurc/Documents/GitHub/dataScienceRepository/00_Data_Source/online_retail_II.xlsx", sheet_name="Year 2009-2010")
 df = df_.copy()
 df.head()
 df.shape
