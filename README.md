@@ -5,7 +5,13 @@
 
  ### 1. Data Science Projects
 
+ * [B2B SaaS Segmentation Project](https://github.com/onurcakili/dataScienceRepository/blob/main/01_Data_Science_Projects/00_B2B_Saas_Segmentation.ipynb)
  * [Persona Project](https://github.com/onurcakili/dataScienceRepository/blob/main/01_Data_Science_Projects/01_Persona_Example.ipynb)
+ * [Persona Project](https://github.com/onurcakili/dataScienceRepository/blob/main/01_Data_Science_Projects/01_Persona_Example.ipynb)
+ * [Persona Project](https://github.com/onurcakili/dataScienceRepository/blob/main/01_Data_Science_Projects/01_Persona_Example.ipynb)
+ * [Persona Project](https://github.com/onurcakili/dataScienceRepository/blob/main/01_Data_Science_Projects/01_Persona_Example.ipynb)
+
+   
  * [Gezinomi Project](https://github.com/onurcakili/dataScienceRepository/blob/main/01_Data_Science_Projects/02_Gezinomi_Project.ipynb)
  * [RFM_Project](https://github.com/onurcakili/dataScienceRepository/blob/main/01_Data_Science_Projects/05_RFM_Project.py)
  * [Big Query Google Cloud](https://github.com/onurcakili/dataScienceRepository/blob/main/01_Data_Science_Projects/03_Big_Query_Google_Cloud.ipynb)
