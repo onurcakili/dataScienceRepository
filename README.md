@@ -5,17 +5,19 @@
 
  ### 1. Data Science Projects
 
- * [Persona Project](https://github.com/onurcakili/dataScienceRepository/blob/main/01_Data_Science_Projects/01_Persona_Example.ipynb)
- * [Gezinomi Project](https://github.com/onurcakili/dataScienceRepository/blob/main/01_Data_Science_Projects/02_Gezinomi_Project.ipynb)
- * [RFM_Project](https://github.com/onurcakili/dataScienceRepository/blob/main/01_Data_Science_Projects/05_RFM_Project.py)
+ * [B2B SaaS Segmentation Project](https://github.com/onurcakili/dataScienceRepository/blob/main/01_Data_Science_Projects/00_B2B_Saas_Segmentation.ipynb)
+ * [Rule Based Persona Project](https://github.com/onurcakili/dataScienceRepository/blob/main/01_Data_Science_Projects/01_Rule-Based-Class-Persona.ipynb)
+ * [Revenue Prediction Project](https://github.com/onurcakili/dataScienceRepository/blob/main/01_Data_Science_Projects/02_Revenue_Prediction_Segmentation.ipynb)
  * [Big Query Google Cloud](https://github.com/onurcakili/dataScienceRepository/blob/main/01_Data_Science_Projects/03_Big_Query_Google_Cloud.ipynb)
- * [CLTV](https://github.com/onurcakili/dataScienceRepository/blob/main/01_Data_Science_Projects/04_1_cltv.py)
- * [CLTV_Prediction](https://github.com/onurcakili/dataScienceRepository/blob/main/01_Data_Science_Projects/04_2_cltv_prediction.py)
- * [Corr_Analysis](https://github.com/onurcakili/dataScienceRepository/blob/main/01_Data_Science_Projects/06_Bahsis_Hesap_Korr_Analysis.ipynb)
- * [Bagimsiz T_Test](https://github.com/onurcakili/dataScienceRepository/blob/main/01_Data_Science_Projects/07_Web_Sure_Uyg_TTest.ipynb)
- * [ML_Egitim Olcum](https://github.com/onurcakili/dataScienceRepository/blob/main/01_Data_Science_Projects/08_Egt_Olcumu_Bagimli_TTesti.ipynb)
- * [ML_Model Basari Testi](https://github.com/onurcakili/dataScienceRepository/blob/main/01_Data_Science_Projects/09_ML_Model_Basari_Testi_Bagimsiz_TTesti.ipynb)
- * [Variance Analysis](https://github.com/onurcakili/dataScienceRepository/blob/main/01_Data_Science_Projects/10_Varyans_Analizi.ipynb)
+ * [CLTV 1](https://github.com/onurcakili/dataScienceRepository/blob/main/01_Data_Science_Projects/04_1_cltv.py)
+ * [CLTV 2](https://github.com/onurcakili/dataScienceRepository/blob/main/01_Data_Science_Projects/04_2_cltv_prediction.py)
+ * [RFM Project](https://github.com/onurcakili/dataScienceRepository/blob/main/01_Data_Science_Projects/05_RFM_Project.py)
+ * [Tip_Calc_Corr_Analysis](https://github.com/onurcakili/dataScienceRepository/blob/main/01_Data_Science_Projects/06_Tip_Calc_Correlation_Analysis.ipynb)
+ * [Web Time T_Test](https://github.com/onurcakili/dataScienceRepository/blob/main/01_Data_Science_Projects/07_Web_Time_T_Test.ipynb)
+ * [Performance Measurement](https://github.com/onurcakili/dataScienceRepository/blob/main/01_Data_Science_Projects/08_Performance_Measurement.ipynb)
+ * [ML Model Performance](https://github.com/onurcakili/dataScienceRepository/blob/main/01_Data_Science_Projects/09_ML_Model_Performance.ipynb)
+ * [WebSite_Content_Variance](https://github.com/onurcakili/dataScienceRepository/blob/main/01_Data_Science_Projects/10_WebSite_Content_Variance.ipynb)
+ 
 
 
 
